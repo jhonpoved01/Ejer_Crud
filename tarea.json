@@ -1,0 +1,9 @@
+{
+  "tareas": [
+    { "id": "1", "title": "Aprender métodos HTTP" },
+    { "id": "2", "title": "Configurar archivos HTML, CSS y JS" },
+    { "id": "3", "title": "Crear el archivo JSON local" },
+    { "id": "4", "title": "Probar peticiones GET y POST" },
+    { "id": "5", "title": "Dominar la manipulación del DOM" }
+  ]
+}
