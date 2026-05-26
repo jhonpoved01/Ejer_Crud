@@ -20,6 +20,5 @@
       "title": "Ejecutar index",
       "id": "p-PB8SLiDrw"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
