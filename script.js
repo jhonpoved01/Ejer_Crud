@@ -8,18 +8,19 @@ const taskList = document.getElementById('task-list');
 // 2. Listar tareas (READ) - Adaptado a json-server v1.0.0-beta
 async function fetchTasks() {
     try {
-        // En tu versión se usa _page y _per_page para limitar los resultados
-        const response = await fetch(`${API_URL}?_page=1&_per_page=5`); 
-        const result = await response.json();
-        
-        // Tu versión devuelve un objeto. Las tareas reales vienen dentro de .data
-        const tasks = result.data; 
-        
-        console.log("Respuesta GET recibida del servidor:", tasks); // Verificación en consola
-        
+
+        const response = await fetch(API_URL);
+
+        const tasks = await response.json();
+
+        console.log("Respuesta GET:", tasks);
+
         renderTasks(tasks);
+
     } catch (error) {
-        console.error("Error al conectar con json-server (¿Está encendido?):", error);
+
+        console.error("Error:", error);
+
     }
 }
 
